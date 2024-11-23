@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
+    <title>4D Snake Game</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <div id="score">Score: 0</div>
-    <div id="plot"></div>
+    <div class="grid-container">
+        <div id="plot-xy"></div>
+        <div id="plot-zy"></div>
+        <div id="plot-xw"></div>
+        <div id="plot-zw"></div>
+    </div>
     <div id="controls">
-        <p>Use the arrow keys to move the snake.</p>
+        <p>Use the AWSD keys to move the snake in the x and y axes.</p>
+        <p>Use the arrow keys to move the snake in the z and w axes.</p>
         <p>Press the spacebar to pause/resume the game.</p>
     </div>
     <script src="script.js"></script>

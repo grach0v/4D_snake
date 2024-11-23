@@ -13,6 +13,17 @@ body {
     margin: 20px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#plot-xy, #plot-zy, #plot-xw, #plot-zw {
+    width: 400px;
+    height: 400px;
+}
+
 #plot {
     width: 400px;
     height: 400px;
